@@ -137,7 +137,8 @@ error_reporting(0);
 
 if ($args->watch) {
 
-    csscrush_set('config', array('io' => 'CssCrush\IO\Watch'));
+    #csscrush_set('config', array('io' => 'CssCrush\IO\Watch'));
+    csscrush_set('config', array('io' => 'CssCrush\IO\SassStyle'));
 
     stdout('CONTROL-C to quit.');
 
