@@ -3,3 +3,4 @@ _*
 phpunit.xml
 composer.lock
 vendor
+.idea
