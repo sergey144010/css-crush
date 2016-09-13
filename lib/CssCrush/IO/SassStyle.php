@@ -20,16 +20,12 @@ class SassStyle extends IO
 
         $output_basename = basename($process->input->filename, '.crush');
         $before = substr($output_basename, 0 , 1);
-        if(isset($before) && $before == '__'){
+        #if(isset($before) && $before == '__'){
             $output_basename = substr($output_basename, 2);
-        };
+        #};
 
         if (! empty($options->output_file)) {
             $output_basename = basename($process->input->filename, '.crush');
-            $before = substr($output_basename, 0 , 1);
-            if(isset($before) && $before == '__'){
-                $output_basename = substr($output_basename, 2);
-            };
         };
 
         return $output_basename.".css";
